@@ -1,19 +1,24 @@
+
 #include <stdio.h>
 
 int func2(int a, int b);
 
 int main(void)
 {
-    int n;
-    int result;
-    scanf("%d", &n);
-    result = func2(10, n);
-    printf("%d", result);
+    int number;
+    int answer;
+
+    scanf("%d", &number);
+    answer = func2(10, number);
+
+    printf("%d", answer);
     return 0;
 }
 
 int func2(int a, int b)
 {
-    /* TODO: a から b を引いた値を返す */
-    return 0;
+    int difference;
+    difference = a - b;
+
+    return difference;
 }
